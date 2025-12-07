@@ -1,0 +1,41 @@
+* {
+
+    box-sizing: border-box;
+  
+}
+
+body{
+
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(46, 39, 39);
+    margin: 2em;
+}
+
+/* header text*/
+#author, #tagline{
+
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px){
+
+    #author, #tagline{
+        font-size:1rem;
+    }
+}
+
+/* card */
+.card{
+
+    display: flex;
+}
+
+.card-header{
+
+background: rgb(8, 7, 7);
+color: whitesmoke;
+
+}
+
+
+
