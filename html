@@ -1,0 +1,572 @@
+<main>
+  <!-- 1. Hero Section -->
+  <section
+    id="hero"
+    class="h-screen flex items-center justify-center text-center px-4 pt-16"
+    style="
+      background-image: radial-gradient(at 0% 0%, #1f2937 0%, #111827 100%);
+    "
+  >
+    <div class="max-w-4xl mx-auto">
+      <p
+        class="text-lg text-teal-400 font-semibold mb-3 fade-in-up"
+        style="animation-delay: 0.1s"
+      >
+        Hi, I'm [Your Name]
+      </p>
+      <h1
+        class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-6 fade-in-up"
+        style="animation-delay: 0.3s"
+      >
+        Crafting elegant solutions with
+        <span class="text-teal-400">modern web technology</span>.
+      </h1>
+      <p
+        class="text-xl text-gray-400 mb-10 fade-in-up"
+        style="animation-delay: 0.5s"
+      >
+        [Your Title, e.g., Full-Stack Developer | Software Engineer | UI
+        Specialist]
+      </p>
+      <a
+        href="#projects"
+        class="inline-block px-8 py-3 bg-teal-600 text-white font-bold rounded-full shadow-lg hover:bg-teal-500 transition-transform duration-300 transform hover:scale-105 fade-in-up"
+        style="animation-delay: 0.7s"
+      >
+        View My Work
+      </a>
+    </div>
+  </section>
+
+  <!-- 2. About Section -->
+  <section id="about" class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-white mb-16">About Me</h2>
+      <div class="grid md:grid-cols-3 gap-12 items-start">
+        <div class="md:col-span-1 flex justify-center">
+          <!-- Placeholder Image (Replace with your professional photo) -->
+          <img
+            src="https://placehold.co/300x300/1f2937/d1d5db?text=Your+Photo"
+            alt="Professional Portrait of [Your Name]"
+            class="rounded-xl shadow-2xl border-4 border-teal-600 object-cover w-full max-w-xs transition-transform duration-500 hover:scale-[1.02]"
+          />
+        </div>
+        <div class="md:col-span-2 text-lg text-gray-300 space-y-6">
+          <p>
+            Hello! I'm [Your Name], a passionate [Your Title] with [X] years of
+            experience building and deploying scalable web applications. My
+            journey started with a curiosity for how things work online, and it
+            quickly grew into a dedication to clean code, performance, and
+            user-centric design.
+          </p>
+          <p>
+            I specialize in the **[Your Core Tech Stack, e.g., MERN/PERN
+            stack]** and thrive on tackling complex problems with elegant,
+            efficient solutions. Whether it's architecting a robust backend API
+            or crafting pixel-perfect frontend interfaces, I bring energy and
+            attention to detail to every project.
+          </p>
+          <p>
+            Beyond coding, I'm interested in [Mention a non-coding hobby or
+            passion, e.g., hiking, mechanical keyboards, digital art]. I believe
+            continuous learning and collaboration are key to growth in
+            technology. I am currently seeking [Type of Role/Project]
+            opportunities. Let's build something amazing together!
+          </p>
+          <a
+            href="#"
+            download="your-resume.pdf"
+            class="inline-flex items-center text-teal-400 hover:text-teal-300 font-semibold transition-colors group"
+          >
+            Download Resume (PDF)
+            <svg
+              class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Skills Section -->
+  <section id="skills" class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-800">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-white mb-16">
+        Technical Toolkit
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Skill Card Template -->
+        <div
+          class="bg-gray-700 p-6 rounded-xl shadow-xl transform hover:shadow-teal-500/50 hover:scale-[1.03] transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold text-teal-400 mb-2">Frontend</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>JavaScript (ES6+)</li>
+            <li>React / Next.js</li>
+            <li>Tailwind CSS / SCSS</li>
+            <li>Figma / UI/UX</li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-gray-700 p-6 rounded-xl shadow-xl transform hover:shadow-teal-500/50 hover:scale-[1.03] transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold text-teal-400 mb-2">
+            Backend & APIs
+          </h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>Node.js / Express</li>
+            <li>Python / Django</li>
+            <li>REST / GraphQL</li>
+            <li>Authentication (JWT)</li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-gray-700 p-6 rounded-xl shadow-xl transform hover:shadow-teal-500/50 hover:scale-[1.03] transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold text-teal-400 mb-2">Databases</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>PostgreSQL / MySQL</li>
+            <li>MongoDB (NoSQL)</li>
+            <li>Redis (Caching)</li>
+            <li>Firebase / Firestore</li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-gray-700 p-6 rounded-xl shadow-xl transform hover:shadow-teal-500/50 hover:scale-[1.03] transition-all duration-300"
+        >
+          <h3 class="text-xl font-semibold text-teal-400 mb-2">
+            Tools & DevOps
+          </h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>Git / GitHub / GitLab</li>
+            <li>Docker / Kubernetes</li>
+            <li>AWS / Google Cloud (GCP)</li>
+            <li>CI/CD (e.g., Jenkins)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Projects Section -->
+  <section
+    id="projects"
+    class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900"
+  >
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-white mb-16">
+        Featured Projects
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:shadow-teal-500/50"
+        >
+          <!-- Project Image/Screenshot -->
+          <img
+            src="https://placehold.co/600x400/1f2937/e5e7eb?text=Project+1+Screenshot"
+            alt="Screenshot of Project Name 1"
+            class="w-full h-48 object-cover border-b border-gray-700"
+          />
+          <div class="p-6 space-y-4">
+            <h3 class="text-2xl font-bold text-white">E-Commerce Platform</h3>
+            <p class="text-sm font-medium text-teal-400">
+              #React #Node.js #MongoDB #Stripe
+            </p>
+            <p class="text-gray-300">
+              A fully functional e-commerce site with user authentication,
+              product management, and a secure payment gateway integration.
+              Focused on scalability and responsive design.
+            </p>
+            <div class="flex space-x-4 pt-2">
+              <a
+                href="#"
+                target="_blank"
+                class="text-teal-400 hover:text-teal-300 flex items-center transition-colors font-medium"
+              >
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h7m0 0v7m0-7L10 14"
+                  ></path>
+                </svg>
+                Live Demo
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="text-gray-400 hover:text-white flex items-center transition-colors font-medium"
+              >
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  ></path>
+                </svg>
+                Code (GitHub)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div
+          class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:shadow-teal-500/50"
+        >
+          <!-- Project Image/Screenshot -->
+          <img
+            src="https://placehold.co/600x400/1f2937/e5e7eb?text=Project+2+Screenshot"
+            alt="Screenshot of Project Name 2"
+            class="w-full h-48 object-cover border-b border-gray-700"
+          />
+          <div class="p-6 space-y-4">
+            <h3 class="text-2xl font-bold text-white">
+              Data Visualization Dashboard
+            </h3>
+            <p class="text-sm font-medium text-teal-400">
+              #Python #D3.js #Flask #SQL
+            </p>
+            <p class="text-gray-300">
+              Built an interactive dashboard for analyzing real-time financial
+              data. Features include custom chart types and user-defined metric
+              tracking.
+            </p>
+            <div class="flex space-x-4 pt-2">
+              <a
+                href="#"
+                target="_blank"
+                class="text-teal-400 hover:text-teal-300 flex items-center transition-colors font-medium"
+              >
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h7m0 0v7m0-7L10 14"
+                  ></path>
+                </svg>
+                Live Demo
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="text-gray-400 hover:text-white flex items-center transition-colors font-medium"
+              >
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  ></path>
+                </svg>
+                Code (GitHub)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div
+          class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:shadow-teal-500/50"
+        >
+          <!-- Project Image/Screenshot -->
+          <img
+            src="https://placehold.co/600x400/1f2937/e5e7eb?text=Project+3+Screenshot"
+            alt="Screenshot of Project Name 3"
+            class="w-full h-48 object-cover border-b border-gray-700"
+          />
+          <div class="p-6 space-y-4">
+            <h3 class="text-2xl font-bold text-white">Custom Blog/CMS</h3>
+            <p class="text-sm font-medium text-teal-400">
+              #Next.js #HeadlessCMS #TypeScript
+            </p>
+            <p class="text-gray-300">
+              A fast, SEO-optimized personal blogging platform. Implemented with
+              a modern static site generation approach and integrated with a
+              Headless CMS for content editing.
+            </p>
+            <div class="flex space-x-4 pt-2">
+              <a
+                href="#"
+                target="_blank"
+                class="text-teal-400 hover:text-teal-300 flex items-center transition-colors font-medium"
+              >
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h7m0 0v7m0-7L10 14"
+                  ></path>
+                </svg>
+                Live Demo
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="text-gray-400 hover:text-white flex items-center transition-colors font-medium"
+              >
+                <svg
+                  class="w-5 h-5 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  ></path>
+                </svg>
+                Code (GitHub)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Contact Section -->
+  <section id="contact" class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-800">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-white mb-16">
+        Get in Touch
+      </h2>
+      <p class="text-center text-lg text-gray-300 mb-8">
+        Have a project in mind or just want to chat? Drop me a line below!
+      </p>
+
+      <!-- Mock Contact Form -->
+      <form
+        action="#"
+        method="POST"
+        class="space-y-6 bg-gray-700 p-8 rounded-xl shadow-2xl border border-gray-600"
+      >
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-200 mb-1"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 text-white focus:ring-teal-500 focus:border-teal-500 transition-colors"
+          />
+        </div>
+        <div>
+          <label
+            for="email"
+            class="block text-sm font-medium text-gray-200 mb-1"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 text-white focus:ring-teal-500 focus:border-teal-500 transition-colors"
+          />
+        </div>
+        <div>
+          <label
+            for="message"
+            class="block text-sm font-medium text-gray-200 mb-1"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-gray-600 border border-gray-500 text-white focus:ring-teal-500 focus:border-teal-500 transition-colors"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full px-6 py-3 bg-teal-600 text-white font-bold rounded-lg shadow-lg hover:bg-teal-500 transition-transform duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-teal-500/50"
+        >
+          Send Message
+        </button>
+        <p class="text-center text-xs text-gray-400 mt-4">
+          *Note: This is a mock form. For a real site, you would connect this to
+          a service like Formspree or a serverless function.
+        </p>
+      </form>
+
+      <div class="mt-12 text-center space-y-4">
+        <p class="text-xl font-semibold text-white">
+          Connect with me on social media:
+        </p>
+        <div class="flex justify-center space-x-6">
+          <!-- GitHub Icon -->
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.417 2.865 8.174 6.824 9.504.499.09.679-.217.679-.485 0-.237-.015-.866-.015-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.47-1.11-1.47-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.092.39-1.983 1.029-2.682-.103-.253-.446-1.272.098-2.641 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0112 4.041c.85.003 1.701.144 2.502.485 1.909-1.29 2.747-1.022 2.747-1.022.546 1.369.202 2.388.1 2.641.64.699 1.029 1.59 1.029 2.682 0 3.848-2.339 4.698-4.566 4.943.359.369.678.1.678.951 0 1.338-.015 2.418-.015 2.744 0 .268.18.587.68.484A10.017 10.017 0 0022 12.017C22 6.484 17.523 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn Icon -->
+          <a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.535-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+          </a>
+          <!-- Email Icon -->
+          <a
+            href="mailto:your.email@example.com"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 border-t border-gray-800">
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500"
+  >
+    &copy; 2025 [Your Name]. All rights reserved. Built with
+    <span class="text-red-500">&hearts;</span> and Tailwind CSS.
+  </div>
+</footer>
+
+<!-- JavaScript for scroll-based animations (optional but nice touch) -->
+<script>
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
+        // Simple logic to highlight the active section in the navbar
+        document.querySelectorAll("nav a").forEach((link) => {
+          link.classList.remove("text-teal-400");
+          if (link.getAttribute("href") === `#${id}`) {
+            link.classList.add("text-teal-400");
+          }
+        });
+
+        // Add animation class to relevant elements on intersect
+        if (id !== "hero") {
+          // Hero has its own specific animation
+          entry.target
+            .querySelectorAll(".fade-in-up, .shadow-xl")
+            .forEach((el) => {
+              el.style.opacity = "1";
+              el.style.transform = "translateY(0)";
+            });
+        }
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Initialize non-hero elements to be invisible before they are observed
+  document
+    .querySelectorAll(
+      "section:not(#hero) .fade-in-up, section:not(#hero) .shadow-xl"
+    )
+    .forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(20px)";
+      el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+    });
+</script>

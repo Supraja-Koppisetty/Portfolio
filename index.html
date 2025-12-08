@@ -1,112 +1,71 @@
-<!doctype html>
-<html lang="en">  
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My portfolio</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-sm-2 col-3">
-                      <img src="img/logo.png" alt="logo" class="img-fluid">
-                    </div>
-                    <div class="col-md-8 col-sm-10 col-9 text-right">
-                        <p id="author">Veera Supraja Koppisetty</p>
-                        <p id="tagline">- A FrontEnd enthusiast</p>
-                     </div> 
-                </div>
-            </div>
-        </header>
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expand="false" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li classs="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li classs="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li classs="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li classs="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veera Supraja | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-gray-800">
+      <nav
+        class="flex justify-end items-center text-white space-x-8 text-base lg:text-lg px-4 sm:px-6 lg:px-8 py-4"
+      >
+        <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-teal-400 transition-colors"
+          >Skills</a
+        >
+        <a href="#projects" class="hover:text-teal-400 transition-colors"
+          >Projects</a
+        >
+        <a href="#contact" class="hover:text-teal-400 transition-colors"
+          >Contact</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section
+        id="hero"
+        class="h-screen flex items-center justify-center text-center px-4 pt-16"
+        style="
+          background-image: radial-gradient(at 0% 0%, #1f2937 0%, #111827 100%);
+        "
+      >
+        <div class="max-w-4xl mx-auto">
+          <p
+            class="text-lg text-teal-400 font-semibold mb-3 fade-in-up"
+            style="animation-delay: 0.1s"
+          >
+            Hi, I'm [Your Name]
+          </p>
+          <h1
+            class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-6 fade-in-up"
+            style="animation-delay: 0.3s"
+          >
+            Crafting elegant solutions with
+            <span class="text-teal-400">modern web technology</span>.
+          </h1>
+          <p
+            class="text-xl text-gray-400 mb-10 fade-in-up"
+            style="animation-delay: 0.5s"
+          >
+            [Your Title, e.g., Full-Stack Developer | Software Engineer | UI
+            Specialist]
+          </p>
+          <a
+            href="#projects"
+            class="inline-block px-8 py-3 bg-teal-600 text-white font-bold rounded-full shadow-lg hover:bg-teal-500 transition-transform duration-300 transform hover:scale-105 fade-in-up"
+            style="animation-delay: 0.7s"
+          >
+            View My Work
+          </a>
         </div>
-    </nav>
-    <img src="img/homepage_background.jpg" alt="background image" class="img-fluid">
-          <hr>
-          <section id="about">
-                <div class="container text-center">
-                   <div class="row">
-                       <div class="col">
-                           <h2>About Me</h2>
-                           <p>
-                               An upcoming Web Developer, Front End enthusiast.
-                           </p>
-                       </div>
-                   </div>   
-                </div>
-            </section>
-            <hr>
-          <section id="projects">
-              <div class="container text-center">
-                  <div class="row">
-                      <div class="col text-center">
-                            <h2>Projects</h2>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card">
-                             <div class="card-header">Project1</div> 
-                             <div class="card-body">
-                                <img src="img/portfolio.jpg" class="img-fluid" alt="Portfolio image">
-                             </div>
-                             <div class="card-footer">
-                                    <a class="card-text">Link1</a>
-                             </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                            <div class="card">
-                               <div class="card-header">Project2</div> 
-                               <div class="card-body">
-                                    <img src="img/memory_game.png" class="img-fluid" alt="Memory game image">
-                                </div>
-                                <div class="card-footer">
-                                        <a class="card-text">Link2</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                                <div class="card">
-                                   <div class="card-header">Project3</div> 
-                                   <div class="card-body">
-                                        <img src="img/classic_arcade_game.jpg" class="img-fluid" alt="Class Arcade image">
-                                   </div>
-                                   <div class="card-footer">
-                                       <a class="card-text">Link3</a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                 </div>
-          </section>
-          <hr>
-          <section id="contact">
-              <div class="container">
-                  <div class="row">
-                      <div class="col text-center">
-                          <h2>Contact Information</h2>
-                           <p>Please feel free to contact me at kvsupraja2710@gmail.com</p>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <script src="js/script.js"></script>
-    </body>
+      </section>
+    </main>
+  </body>
 </html>

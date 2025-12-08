@@ -1,41 +1,39 @@
 * {
-
-    box-sizing: border-box;
-  
+  box-sizing: border-box;
 }
 
-body{
-
-    font-family: 'Shadows Into Light', cursive;
-    color: rgb(46, 39, 39);
-    margin: 2em;
+/* Custom scrollbar styling for a sleek look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111827; /* Dark background */
+}
+::-webkit-scrollbar-thumb {
+  background: #374151; /* Gray scroll thumb */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Lighter gray on hover */
 }
 
-/* header text*/
-#author, #tagline{
-
-    font-size: 1.5rem;
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 600px){
-
-    #author, #tagline{
-        font-size:1rem;
-    }
+/* Custom animation for the Hero text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* card */
-.card{
-
-    display: flex;
+.fade-in-up {
+  animation: fadeIn 0.8s ease-out forwards;
 }
-
-.card-header{
-
-background: rgb(8, 7, 7);
-color: whitesmoke;
-
-}
-
-
-
