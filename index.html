@@ -11,61 +11,63 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="bg-gray-900 text-gray-200 antialiased">
     <header class="sticky top-0 z-50 bg-gray-800">
-      <nav
-        class="flex justify-end items-center text-white space-x-8 text-base lg:text-lg px-4 sm:px-6 lg:px-8 py-4"
-      >
-        <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
-        <a href="#skills" class="hover:text-teal-400 transition-colors"
-          >Skills</a
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative">
+        <nav
+          class="flex justify-between items-center text-white text-base lg:text-lg"
         >
-        <a href="#projects" class="hover:text-teal-400 transition-colors"
-          >Projects</a
-        >
-        <a href="#contact" class="hover:text-teal-400 transition-colors"
-          >Contact</a
-        >
-      </nav>
+          <a
+            href="#hero"
+            class="text-teal-400 font-bold hover:text-teal-300 transition-colors"
+            >&lt;Veera Supraja /&gt;</a
+          >
+          <!-- Harmburger menu -->
+          <button class="text-white md:hidden text-2xl" id="hamburger-menu">
+            &#9776;
+          </button>
+          <div class="hidden md:flex md:space-x-8" id="nav-links">
+            <a href="#about" class="hover:text-teal-400 transition-colors"
+              >About</a
+            >
+            <a href="#skills" class="hover:text-teal-400 transition-colors"
+              >Skills</a
+            >
+            <a href="#projects" class="hover:text-teal-400 transition-colors"
+              >Projects</a
+            >
+            <a href="#contact" class="hover:text-teal-400 transition-colors"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <section
         id="hero"
-        class="h-screen flex items-center justify-center text-center px-4 pt-16"
-        style="
-          background-image: radial-gradient(at 0% 0%, #1f2937 0%, #111827 100%);
-        "
+        class="flex items-center justify-center flex-col h-screen px-4 sm:px-6 lg:px-8"
       >
-        <div class="max-w-4xl mx-auto">
-          <p
-            class="text-lg text-teal-400 font-semibold mb-3 fade-in-up"
-            style="animation-delay: 0.1s"
-          >
-            Hi, I'm [Your Name]
-          </p>
+        <div class="max-w-5xl mx-auto text-center space-y-8">
+          <!-- larger font size is needed for this -->
+          <p class="text-teal-400 text-xl sm:text-2xl">Hi, I'm Veera Supraja</p>
           <h1
-            class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-6 fade-in-up"
-            style="animation-delay: 0.3s"
+            class="text-white text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight"
           >
-            Crafting elegant solutions with
-            <span class="text-teal-400">modern web technology</span>.
+            I craft elegant solutions with
+            <span class="text-teal-400">modern web technologies</span>
           </h1>
-          <p
-            class="text-xl text-gray-400 mb-10 fade-in-up"
-            style="animation-delay: 0.5s"
-          >
-            [Your Title, e.g., Full-Stack Developer | Software Engineer | UI
-            Specialist]
-          </p>
           <a
+            class="bg-teal-600 text-white px-8 py-3 rounded-lg shadow-xl hover:bg-teal-400 transition-colors inline-block"
             href="#projects"
-            class="inline-block px-8 py-3 bg-teal-600 text-white font-bold rounded-full shadow-lg hover:bg-teal-500 transition-transform duration-300 transform hover:scale-105 fade-in-up"
-            style="animation-delay: 0.7s"
+            >View My Work</a
           >
-            View My Work
-          </a>
         </div>
       </section>
+      <section id="skills">Skills</section>
+      <section id="projects">Projects</section>
+      <section id="contact">Contact</section>
     </main>
+    <script src="js/menu.js"></script>
   </body>
 </html>
