@@ -15,7 +15,9 @@ hamburgerButton.addEventListener("click", () => {
       "space-y-8",
       "py-6",
       "left-0",
-      "md:flex"
+      "md:flex",
+      "z-50",
+      "h-screen"
     );
     navLinks.classList.remove("hidden");
   } else {
@@ -31,7 +33,9 @@ hamburgerButton.addEventListener("click", () => {
       "space-y-8",
       "py-6",
       "left-0",
-      "md:flex"
+      "md:flex",
+      "z-50",
+      "h-screen"
     );
     navLinks.classList.add("hidden");
   }
