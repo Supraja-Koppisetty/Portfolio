@@ -70,15 +70,18 @@
           >
         </div>
       </section>
-      <section id="about" class="py-20">
+      <section
+        id="about"
+        class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900"
+      >
         <div class="max-w-7xl mx-auto space-y-8 px-4 sm:px-6 lg:px-8">
-          <h2 class="text-4xl text-white font-extrabold text-center">
+          <h2 class="text-4xl text-white font-extrabold text-center mb-16">
             About Me
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="flex justify-center md:justify-end">
               <div id="profile-image-container">
-                <img src="img/homepage_background.jpg" alt="Head Shot" />
+                <img src="img/profile_picture.jpeg" alt="Head Shot" />
               </div>
             </div>
             <div id="about-me">
@@ -87,12 +90,15 @@
           </div>
         </div>
       </section>
-      <section id="skills" class="py-20">
+      <section
+        id="skills"
+        class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900"
+      >
         <div
           id="skills-container"
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8"
         >
-          <h2 class="text-4xl text-white text-center font-extrabold mb-12">
+          <h2 class="text-4xl text-white text-center font-extrabold mb-16">
             Skills
           </h2>
           <div class="skills-container-grid space-y-16">
@@ -141,7 +147,7 @@
           </div>
         </div>
       </section>
-      <section id="projects">
+      <!-- <section id="projects">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-8">
           <h2 class="text-4xl text-white text-center font-extrabold mb-12">
             Projects
@@ -150,11 +156,28 @@
             id="projects-grid"
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            <!-- Project items will be dynamically added here -->
+            Project items will be dynamically added here
           </div>
         </div>
+      </section> -->
+      <section
+        id="projects"
+        class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900"
+      >
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-center text-4xl font-extrabold text-white mb-16">
+            Featured Projects
+          </h2>
+          <div
+            class="projects-grid grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+          ></div>
+          <!-- Project cards are dynamically attached here -->
+        </div>
       </section>
-      <section id="contact">
+      <section
+        id="contact"
+        class="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-900"
+      >
         <div
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-8 text-center"
         >
@@ -171,6 +194,7 @@
       </section>
     </main>
     <script src="js/skillsGridTemplate.js"></script>
+    <script src="js/projectsTemplate.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

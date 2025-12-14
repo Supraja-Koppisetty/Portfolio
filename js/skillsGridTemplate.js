@@ -69,7 +69,7 @@ const devOpsSkills = [
     name: "AWS",
     icon: "fab fa-aws",
     level: "Intermediate",
-    image: "img/skills/aws_logo.png",
+    image: "img/skills/aws-brand-color.png",
   },
   {
     name: "Jenkins",
@@ -89,11 +89,11 @@ function generateSkillsCard(skills, gridId) {
   const skillsGrid = document.getElementById(gridId);
   const innerHTMLContent = skills
     .map(
-      (skill) => ` <div>
+      (skill) => ` <div class="skill-card">
                 <img
                   src="${skill.image}"
                   alt="${skill.name} Logo"
-                  class="mx-auto h-16 w-16 object-contain"
+                  class="mx-auto h-16 w-16 object-contain hover:scale-105 transform transition duration-300"
                   />
                   <p class="text-center mt-2 text-gray-300">${skill.name}</p>
                   </div>`
