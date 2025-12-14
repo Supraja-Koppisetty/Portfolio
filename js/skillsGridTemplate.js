@@ -89,7 +89,9 @@ function generateSkillsCard(skills, gridId) {
   const skillsGrid = document.getElementById(gridId);
   const innerHTMLContent = skills
     .map(
-      (skill) => ` <div class="skill-card">
+      (
+        skill
+      ) => ` <div class="skill-card bg-gray-800 p-4 rounded-xl text-center text-lg font-medium shadow-xl transition-all duration-300 cursor-pointer hover:bg-gray-700 hover:scale-[1.03] hover:shadow-teal-500/50">
                 <img
                   src="${skill.image}"
                   alt="${skill.name} Logo"
