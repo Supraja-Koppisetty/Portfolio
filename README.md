@@ -1,62 +1,73 @@
-# Veera Supraja K | Full-Stack Developer Portfolio
+# React + TypeScript + Vite
 
-> **A professional, minimalist portfolio website showcasing my skills, projects, and career impact in full-stack and UI development.**
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Live Site
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-View the live portfolio here: **[https://veera-supraja-k-portfolio.vercel.app/](https://veera-supraja-k-portfolio.vercel.app/)**
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Key Features & Structure
+## Expanding the ESLint configuration
 
-- **Responsive Design:** Optimized layout for desktop, tablet, and mobile viewing.
-- **Modular Design:** Skills and Projects sections are rendered dynamically using JavaScript templating from structured data files, making updates easy.
-- **Clear Navigation:** Intuitive navigation bar with smooth scrolling to key sections (`About`, `Skills`, `Projects`, `Contact`).
-- **Dark Mode Aesthetic:** Clean, modern UI with a high-contrast dark theme.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
----
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## Tech Stack
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-This project was built using the following technologies:
-
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Styling:** Custom CSS or [Specify if you used Tailwind CSS, Bootstrap, or other frameworks]
-- **Deployment:** Vercel
-
----
-
-## Local Development Setup
-
-To get a local copy up and running, follow these simple steps:
-
-### 1. Prerequisites
-
-You will only need a modern web browser to view the static files.
-
-### 2. Clone the Repository
-
-```bash
-git clone [YOUR_REPOSITORY_URL]
-cd portfolio-master
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
 
-### 3.Running Locally
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-Since this is a static HTML/CSS/JS site, you can open the main index.html file directly in your browser, or use a simple live-server extension (like VS Code's Live Server) for development:
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-```bash
-# Example if using a live server in your IDE
-# Open index.html with Live Server
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-
-## Contact
-
-Veera Supraja K
-
-Email: [kvsupraja2710@gmail.com]
-
-LinkedIn: [(https://www.linkedin.com/in/kvsupraja)]
