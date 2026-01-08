@@ -24,42 +24,63 @@ const Header = () => {
             {isOpen ? "\u2715" : "\u2630"}
           </button>
           <div
-            className={`${
-              isOpen
-                ? "flex flex-col absolute top-16 left-0 w-full bg-gray-800 space-y-6 py-6 z-50 h-screen items-center"
-                : "hidden"
-            } md:flex md:space-x-8 md:static md:flex-row md:bg-transparent md:space-y-0 md:py-0 md:w-auto`}
+            className="hidden md:flex md:space-x-8 md:static md:flex-row md:bg-transparent md:space-y-0 md:py-0 md:w-auto"
             id="nav-links"
           >
-            <a
-              href="#about"
-              className="hover:text-teal-400 transition-colors"
-              onClick={toggleMenu}
-            >
+            <a href="#about" className="hover:text-teal-400 transition-colors">
               About
             </a>
-            <a
-              href="#skills"
-              className="hover:text-teal-400 transition-colors"
-              onClick={toggleMenu}
-            >
+            <a href="#skills" className="hover:text-teal-400 transition-colors">
               Skills
             </a>
             <a
               href="#projects"
               className="hover:text-teal-400 transition-colors"
-              onClick={toggleMenu}
             >
               Projects
             </a>
             <a
               href="#contact"
               className="hover:text-teal-400 transition-colors"
-              onClick={toggleMenu}
             >
               Contact
             </a>
           </div>
+          {isOpen && (
+            <div
+              className="flex flex-col absolute top-16 left-0 w-full bg-gray-800 space-y-6 py-6 z-50 h-screen items-center"
+              id="nav-links"
+            >
+              <a
+                href="#about"
+                className="hover:text-teal-400 transition-colors"
+                onClick={toggleMenu}
+              >
+                About
+              </a>
+              <a
+                href="#skills"
+                className="hover:text-teal-400 transition-colors"
+                onClick={toggleMenu}
+              >
+                Skills
+              </a>
+              <a
+                href="#projects"
+                className="hover:text-teal-400 transition-colors"
+                onClick={toggleMenu}
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="hover:text-teal-400 transition-colors"
+                onClick={toggleMenu}
+              >
+                Contact
+              </a>
+            </div>
+          )}
         </nav>
       </div>
     </header>
