@@ -58,7 +58,7 @@ const devOpsSkills = [
     name: "Docker",
     icon: "fab fa-docker",
     level: "Intermediate",
-    image: "img/skills/docker-logo.png",
+    image: "/skills/docker-logo.png",
   },
   {
     name: "Kubernetes",
